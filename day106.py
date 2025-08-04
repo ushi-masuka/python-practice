@@ -3,3 +3,4 @@
 num_of_heads=int(input("please enter the number of heads: "))
 num_of_legs=int(input("please enter the number of legs: "))
 
+
