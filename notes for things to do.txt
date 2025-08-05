@@ -1,6 +1,4 @@
-1.actually lay around with all the ml algos to see how much real time they take(on different
-sized datasets. record the times.). research of different libraries for the same job and do 
-the exeriment myself. also check out ways to do using cloud and parallely.
+1.
 
 2. implement ml algos from scratch.
 
@@ -9,4 +7,14 @@ the exeriment myself. also check out ways to do using cloud and parallely.
 4. finish all python assignments from scratch.
 
 5.get working on jarvis again.
+
+ideas while Lect.3 of stanford andrew ng. ml course.
+
+6. check to see if I can take out the error of each instance from say linear 
+regression and fit it to different distributions.
+
+7.actually lay around with all the ml algos to see how much real time they take(on different
+sized datasets. record the times.). research of different libraries for the same job and do 
+the exeriment myself. also check out ways to do using cloud and parallely.
+ including single ste linear regression(normal form)
 
