@@ -13,3 +13,10 @@ The minimum angle between hour and minute hand when the time is 9 is 90 degress.
 
 H=int(input("please enter the Hour: "))
 M=int(input("please enter the minutes: "))
+
+angle=H*(30) + M*(0.5) - M*(6)
+
+if angle>180:
+    print(int(360-angle))
+else:
+    print(int(angle))
