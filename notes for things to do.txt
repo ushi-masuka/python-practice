@@ -11,7 +11,7 @@
 ideas while Lect.3 of stanford andrew ng. ml course.
 
 6. check to see if I can take out the error of each instance from say linear 
-regression and fit it to different distributions.
+regression and fit it to different distributions. (then go for glms- lecture 4)
 
 7.actually lay around with all the ml algos to see how much real time they take(on different
 sized datasets. record the times.). research of different libraries for the same job and do 

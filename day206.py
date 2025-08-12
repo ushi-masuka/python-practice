@@ -7,6 +7,7 @@ angle3=int(input("please enter the angle3: "))
 angles=[angle1,angle2,angle3]
 sum=0
 
+
 for i in angles:
     sum+=i
 
