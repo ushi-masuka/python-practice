@@ -12,4 +12,4 @@ for i in range(1,n):
 for i in range(1,l+1,2):
   print(" "*(n-i//2),"*"*i,sep="")
 
-
+ 
