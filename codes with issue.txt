@@ -2,3 +2,4 @@
 209
 312
 403-7
+502-a-1 do itertools implementation 
