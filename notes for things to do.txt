@@ -13,8 +13,16 @@ ideas while Lect.3 of stanford andrew ng. ml course.
 6. check to see if I can take out the error of each instance from say linear 
 regression and fit it to different distributions. (then go for glms- lecture 4)
 
-7.actually lay around with all the ml algos to see how much real time they take(on different
+7.actually play around with all the ml algos to see how much real time they take(on different
 sized datasets. record the times.). research of different libraries for the same job and do 
 the exeriment myself. also check out ways to do using cloud and parallely.
  including single ste linear regression(normal form)
 
+8. explore cost effective ways to run analysis on textual data without gpts, aiming to get better
+and accurate analysis in comparison to say what gpt give. for jarvis.
+eg use case 1: running analysis on things talked about to gpt and finding trend/interesting 
+facts/unique things from that.
+eg use case 2: sentiment analyses on the texts maybe even used in diagnosis
+eg use case 3: creating a token light way to share context with other llms. (in form of prompts
+ or other)
+probably using agentic behvaiour with a strongly trained judge/ml/stat expert master agent
