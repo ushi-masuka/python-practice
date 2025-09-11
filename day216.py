@@ -4,17 +4,17 @@ n= int(input("please enter the number that needs to be checked: "))
 
 if n<=1:
     print("It is not prime")
-
+elif n==2:
+    print("it is prime.")
 elif n%2==0 and n!=2:
     print("it is not prime")
 
-elif n>3:
-    for i in range(3,int((n**(1/2))+3),2):
+else:
+    for i in range(3,int((n**(0.5))+1),2):
         if n%i==0:
             print("it is not prime")
             break
-        else:
-            print("it is prime")
-            break 
-else:
-    print("it is prime")         
+    else:
+        print("it is prime")
+        
+       

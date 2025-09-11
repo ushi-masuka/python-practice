@@ -1,0 +1,65 @@
+Here is a multi-stage program to learn Scikit-learn, with each stage broken down into levels of increasing difficulty. Each level presents a practical question designed to test specific concepts.
+
+***
+## Stage 1: The Foundations - Data and Preprocessing
+
+This stage focuses on getting data ready for modeling, which is the most critical part of any machine learning project.
+
+### Level 1: Basic Data Handling
+`Q1:` Load the built-in Iris dataset from `sklearn.datasets`. First, print its shape, column names, and a statistical summary. Then, create your feature matrix `X` (the first two features only) and your target vector `y`. Finally, split the data into a training set and a testing set, with 80% of the data used for training.
+
+---
+### Level 2: Handling Missing Data
+`Q2:` Load the built-in Diabetes dataset. Now, artificially introduce some missing values into the 'bmi' and 'age' columns. First, solve this by creating a new dataset where any row with a missing value is dropped. Second, solve it by using `SimpleImputer` to fill the missing values with the mean of their respective columns.
+
+---
+### Level 3: Encoding Categorical Data
+`Q3:` Create a small Pandas DataFrame with a categorical feature, like 'Color' (`['Red', 'Blue', 'Green', 'Red']`). Use `OneHotEncoder` to convert this categorical feature into a numerical format. Explain why a simple numerical mapping (Red=0, Blue=1) might be problematic for some models.
+
+---
+### Level 4: Feature Scaling
+`Q4:` Using the Diabetes dataset again, apply `StandardScaler` to all its feature columns. Create a histogram of one of the features (e.g., 'bmi') before and after scaling to visualize the change. Why is feature scaling important for algorithms like Support Vector Machines (SVMs)?
+
+***
+## Stage 2: Supervised Learning - Regression
+
+This stage focuses on predicting a continuous value.
+
+### Level 1: Basic Model Training
+`Q5:` Create a synthetic dataset of 100 points that follows a linear relationship (e.g., $y = 5x + 15 + \text{noise}$). Train a `LinearRegression` model on this data. After training, print the model's learned coefficient and intercept. How close are they to the true values of 5 and 15?
+
+---
+### Level 2: Understanding Regularization
+`Q6:` Using the same synthetic data from the previous question, add 20 columns of random noise as irrelevant features. Now, train three models: `LinearRegression`, `Ridge`, and `Lasso`. Print the coefficients of all three models. What is the key difference you observe, especially in the coefficients for the noise features, and why?
+
+---
+### Level 3: Hyperparameter Tuning
+`Q7:` Using the noisy dataset from the previous question, use `GridSearchCV` with 5-fold cross-validation to find the best `alpha` (regularization strength) for a `Ridge` regression model. Test a range of alpha values like `[0.1, 1, 10, 100]`.
+
+***
+## Stage 3: Supervised Learning - Classification
+
+This stage focuses on predicting a category or class.
+
+### Level 1: Basic Classifier
+`Q8:` Train a `LogisticRegression` model on the full Iris dataset. After training, predict the classes on your test set and calculate the overall accuracy of the model.
+
+---
+### Level 2: Advanced Evaluation Metrics
+`Q9:` Create a synthetic imbalanced dataset with 1000 samples for one class and only 50 for another. Train a `DecisionTreeClassifier` on this data. Why is accuracy a misleading metric here? Instead, evaluate your model by printing the `classification_report` (which includes precision, recall, and F1-score) and by plotting a confusion matrix.
+
+---
+### Level 3: Comparing Models
+`Q10:` On the same imbalanced dataset from the previous question, train a `RandomForestClassifier`. Compare its F1-score for the minority class to that of the `DecisionTreeClassifier`. Is it better? Briefly explain why a Random Forest might perform better on this type of data.
+
+***
+## Stage 4: Pipelines and Advanced Workflows
+
+This final stage combines all the previous concepts.
+
+### Level 1: Building a Preprocessing Pipeline
+`Q11:` Create a synthetic dataset that has it all: missing numerical values, categorical features, and numerical features that need scaling. Use `ColumnTransformer` to create a preprocessing pipeline that applies a `SimpleImputer` to the numerical columns and a `OneHotEncoder` to the categorical columns.
+
+---
+### Level 2: Full-Stack Model Training
+`Q12:` Take the `ColumnTransformer` from the previous question and integrate it into a `Pipeline` that also includes a `StandardScaler` step and a final `SVC` (Support Vector Classifier) model. Train this single pipeline on your data. Why is using a `Pipeline` the preferred way to structure a full machine learning workflow?
